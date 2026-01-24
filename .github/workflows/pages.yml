@@ -52,7 +52,7 @@ jobs:
           pip install -r docs/requirements.txt
       - name: Run Doxygen
         working-directory: docs
-        run: doxygen Doxyfile
+        run: doxygen doxyfile
       - name: Build Sphinx HTML (into docs/www)
         run: |
           sphinx-build -b html docs docs/www
