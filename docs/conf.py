@@ -1,10 +1,5 @@
 #!/usr/bin/env python3
-import sys
-
-if os.path.isdir('/opt/homebrew/lib/python3.11/site-packages'):
-    sys.path.append('/opt/homebrew/lib/python3.11/site-packages')
-
-import subprocess, os
+import sys, os, subprocess
 
 project = 'CryptX'
 copyright = '2023'
