@@ -7,6 +7,8 @@ CryptX Library
 
   <p style="background:rgba(176,196,222,.5); padding:10px; font-family:Arial; margin:20px 0;"><span style="font-weight:bold;">Cryptography</span> is a specialization within the information security field that deals almost exclusively with protecting data from being read or modified by unauthorized parties. Cryptographic standards are vigorously tested for vulnerabilities and subject to constant analysis and improvement.</p>
 
+.. raw:: html
+
 <p style="background:rgba(255,255,204,.5); padding:10px; font-family:Arial; margin:20px 0;">This project is no longer actively maintained. The primitives have since been ported into lwIP-CE's TLS implementation where work continues on hardening and improvement.</p>
 
 **CryptX** is a specialty library designed to provide cryptographic functionality for the TI-84+ CE. It integrates with the `CE C toolchain <https://github.com/CE-Programming/toolchain>`_ and allows developers to easily implement cryptography into their projects without needing to worry about low-level implementation details. Distribution as a dynamic library also allows for the library to be updated with new functionality, bug fixes, and vulnerability patches usually without even requiring programs be rebuilt. Just install the new library version on your device and it should be forwards-compatible.
