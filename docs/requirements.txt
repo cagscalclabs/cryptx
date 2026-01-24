@@ -1,8 +1,8 @@
-docutils==0.16
-sphinx>=7,<9
-sphinx_rtd_theme==1.0.0
-breathe==4.33.1
-Jinja2==3.1.2
+docutils>=0.16
+sphinx>=5
+sphinx_rtd_theme>=1.0.0
+breathe>=4.33.1
+Jinja2=>=3.1.2
 hawkmoth>=0.12
 clang>=6
 sphinx-proof
