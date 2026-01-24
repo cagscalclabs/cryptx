@@ -1,16 +1,19 @@
 #!/usr/bin/env python3
 import sys
 
-sys.path.append('/opt/homebrew/lib/python3.11/site-packages')
+if os.path.isdir('/opt/homebrew/lib/python3.11/site-packages'):
+    sys.path.append('/opt/homebrew/lib/python3.11/site-packages')
+
 import subprocess, os
 
 project = 'CryptX'
 copyright = '2023'
 author = 'Anthony Cagliano'
 
-current_version = os.environ['current_version']
-default_version = os.environ['default_version']
-versions = os.environ['versions'].split()
+current_version = os.environ.get('current_version', 'stable')
+default_version = os.environ.get('default_version', current_version)
+versions = os.environ.get('versions', current_version).split()
+
 
 extensions = [
     "breathe",
